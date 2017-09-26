@@ -49,6 +49,7 @@ move_bounds = [ 1,50;...
                 0,0;...
                  0,0] ;
 %Create Simulations Constrained to Fault Data
+num_rel = 100;
 for rel_ind = 1 : num_rel
 [state{rel_ind},action{rel_ind}, ~, acc{rel_ind},dd{rel_ind}] = StraussMarked(gamma, beta, d, max_mark, num_iter, sim_ext, init, move_bounds );
 end
@@ -66,12 +67,15 @@ xlabel('Iterations','Fontname','Arial','FontSize',14)
 ylabel('Acceptance Rate','Fontname','Arial','FontSize',14)
 set(gca,'Fontname','Arial','FontSize',14)
 %% Plot Perturbation History for 2 Realizations
+%Index of Realization to plot
 k = 1 ;
+%McMC Iteration Index
 x = 1:num_iter;
+%Initialize action counts
 action_count = zeros(1,4);
+%Plot Perturbation History for Realization k
 count = 0 ;
-for k = [1,4]
-for i=2:200%num_iter-1
+for i=2:num_iter-1
     switch action{k}(i)
         case 1 
             C='b';
@@ -112,7 +116,6 @@ for i=2:200%num_iter-1
     end   
 %     line(x(1,[i-1 i]), log(dd{1}.point([i-1 i])), 'Color', C,'LineWidth',5);
 hold on
-end
 end
 xlabel('Iterations','Fontname','Arial','FontSize',14)
 ylabel('Acceptance Rate','Fontname','Arial','FontSize',14)

@@ -1,4 +1,5 @@
 function [L, x, y, z, cont, fval, par_opt] = LvlOptimize(hard_data,box_ext, az_bound, dip_bound, grid_dim)
+%%LvlOptimize finds surface parameters for given fault interpretations
 
 proposal = mean(box_ext) ;
 

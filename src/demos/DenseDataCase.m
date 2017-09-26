@@ -3,15 +3,10 @@ close all
 clc
 %Add src to directory
 addpath(fileparts(pwd))
-%%
-
+%% Define Simulation Extent and Resolution
 sim_ext = [500,  500, -2500;...
            3500, 1000, -1600] ;
-
 res = [20,20,40];
-% fault_network = []; 
-% init.point = [];
-% init.mark = [];
 %% Create Hard-Data
 %Centroids for fault observations
 data.point = [ 2500, 750, -2000;...
@@ -63,7 +58,7 @@ set(gca,'Fontname','Arial','FontSize',14,'YTick',[],'XLim',[1000 4000],...
 view([-2 2])
 % %saveas(gcf, 'C:\Users\orhuna\Desktop\Autumn 2015\Figures\dense_hard_data.emf')
 %% Create Hard-Data
-num_rels = 10 ;
+num_rels = 1 ;
 num_iter = 10000 ;
 for rel_ind = 1 : num_rels
 % init.point = [];
@@ -87,50 +82,28 @@ d = [400,100;...
 %Number of Marks to Simulate
 max_mark = 2;
 % Simulation Inputs
-
-
-% initialization.point = [];
-% 
-% initialization.mark = [] ;
-
 move_bounds = [ 1,50;...
                 0,0;...
                  0,0] ;
 param{rel_ind}.gamma = gamma ;
 param{rel_ind}.beta = beta ;
 param{rel_ind}.d = d ;
-num_horizons = 5;
-[state{1},action{1}, states{1}, acc{1}] = StraussMarked(gamma, beta, d, max_mark, num_iter, sim_ext, init, move_bounds );             
-%Compute Dissimilarity Between States of the Markov Chain
-% for state_length = 2 : num_iter-1
-%     d_states(state_length-1,1) = MHD(states{1}{state_length}.point,states{1}{state_length+1}.point) ;
-%     l_point(state_length-1,1) = length(states{1}{state_length}.point);
-% end
-% figure, plot(2:num_iter,d_states,'LineWidth',2)
-% figure, scatter(2:num_iter,l_point,'Marker', '.')
-% gamma=[-1,-2];
+
 [state{rel_ind},action{rel_ind}, states{rel_ind}, acc{rel_ind}] = StraussMarked(gamma, beta, d, max_mark, num_iter, sim_ext, init, move_bounds );
 end
-% figure, plot(cumsum(acc{1})/length(acc{1}),'LineWidth',3)
-% hold on
-% plot(cumsum(acc{2})/length(acc{2}),'LineWidth',3,'Color','r')
-% xlabel('Number of Interations','Fontname','Arial','FontSize',14)
-% ylabel('Acceptance Rate','Fontname','Arial','FontSize',14)
-% legend('\gamma = -5 , \beta=-4','\gamma = -1 , \beta=-2','Fontname','Arial','FontSize',14,'Location','NorthWest')
-% set(gca,'Fontname','Arial','FontSize',14)
-% hold off
 %%
 fault_network =[];
 colors = ['b','r','m','g'];
 c ='bbrr';
-for mark_type = 1 : max(state{2}.mark)
+ind = 1;
+for mark_type = 1 : max(state{ind}.mark)
     sign = (mark_type==1)-1*(mark_type==2) ;
-    sim_size = randi([800,1500],length(find(state{2}.mark==mark_type)),3) ;
-    az = repmat(5, length(find(state{2}.mark==mark_type)),1) ;
-    dip = sign * randi([70 80], length(find(state{2}.mark==mark_type)),1) ;
-    proposal = state{2}.point(state{2}.mark==mark_type,:) ;
+    sim_size = randi([800,1500],length(find(state{ind}.mark==mark_type)),3) ;
+    az = repmat(5, length(find(state{ind}.mark==mark_type)),1) ;
+    dip = sign * randi([70 80], length(find(state{ind}.mark==mark_type)),1) ;
+    proposal = state{ind}.point(state{ind}.mark==mark_type,:) ;
     count = 0 ;
-    for fault_ind = 1 : length(find(state{2}.mark==mark_type))
+    for fault_ind = 1 : length(find(state{ind}.mark==mark_type))
         fault_proposed = InsertFaultOntoMark(fault_network, proposal(fault_ind,:),res,sim_size(fault_ind,:),az(fault_ind),dip(fault_ind), 2) ;
         if ~isempty(fault_proposed{1}.vertices)
             count = count + 1 ;
