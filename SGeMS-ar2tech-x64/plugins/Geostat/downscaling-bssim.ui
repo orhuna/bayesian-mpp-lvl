@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Downscaling_BSSIM</class>
+ <widget class="QWidget" name="Downscaling_BSSIM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>1253</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Downscaling with DSSIM</string>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="AlgorithmCategory" stdset="0">
+   <string>Downscaling</string>
+  </property>
+  <property name="AlgorithmDescription" stdset="0">
+   <string>BSSIM : direct simulation</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_11">
+   <item>
+    <widget class="QTabWidget" name="BSSIM">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>General</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QGroupBox" name="SimulationGrid">
+         <property name="maximumSize">
+          <size>
+           <width>32767</width>
+           <height>140</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Simulation Grid</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="GridSelector" name="Grid_Name">
+            <property name="currentIndex" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="TextLabel2">
+            <property name="text">
+             <string>Property Name Prefix</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Property_Name"/>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="TextLabel2_2_2_2">
+           <property name="text">
+            <string>Nb of realizations</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Nb_Realizations">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10000</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="TextLabel2_2_2_2_2">
+           <property name="text">
+            <string>Seed</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Seed">
+           <property name="maximum">
+            <number>99999999</number>
+           </property>
+           <property name="value">
+            <number>14071789</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Simple Kriging Mean</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QRadioButton" name="is_mean_from_cdf">
+            <property name="text">
+             <string>Use target distribution</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <attribute name="buttonGroup">
+             <string>buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="is_mean_local">
+            <property name="text">
+             <string>Use local block values</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string>buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Output_upscaled_property">
+         <property name="text">
+          <string>Output upscaled values</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Output_errors_property">
+         <property name="text">
+          <string>Output upscaled errors (Data - Simulation)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>330</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Data</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QGroupBox" name="GroupBox3">
+         <property name="title">
+          <string>Hard Data</string>
+         </property>
+         <layout class="QGridLayout">
+          <property name="margin">
+           <number>11</number>
+          </property>
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="PropertySelector" name="Hard_Data"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="GroupBox3_2">
+         <property name="title">
+          <string>Block data</string>
+         </property>
+         <layout class="QGridLayout" name="_2">
+          <property name="margin">
+           <number>11</number>
+          </property>
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="PropertySelector" name="Coarse_Grid_Name"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="GroupBox9">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Search Ellipsoid</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="EllipsoidInput" name="Search_Ellipsoid"/>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>Hard Data</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QHBoxLayout">
+               <property name="spacing">
+                <number>6</number>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="TextLabel2_2_2_2_3">
+                 <property name="text">
+                  <string>Max conditioning data</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="Max_Conditioning_Data_hd">
+                 <property name="minimum">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <number>20000</number>
+                 </property>
+                 <property name="value">
+                  <number>12</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="AdvancedNeighborhoodInput" name="AdvancedSearch_hd"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="title">
+             <string>Blocks and previously simulated points</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="TextLabel2_2_2_2_4">
+                 <property name="text">
+                  <string>Max conditioning blocks</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QSpinBox" name="Max_Conditioning_Data_blk">
+                 <property name="minimum">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <number>20000</number>
+                 </property>
+                 <property name="value">
+                  <number>12</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="TextLabel2_2_2_2_6">
+                 <property name="text">
+                  <string>Max previously sim points</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QSpinBox" name="Max_Conditioning_Pt_Simul">
+                 <property name="minimum">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <number>20000</number>
+                 </property>
+                 <property name="value">
+                  <number>12</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>17</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="NonParamCdfInput" name="nonParamCdf">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>276</width>
+           <height>16</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabPage">
+      <attribute name="title">
+       <string>Variogram</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QGroupBox" name="GroupBox11">
+         <property name="title">
+          <string>Variogram</string>
+         </property>
+         <layout class="QVBoxLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="margin">
+           <number>11</number>
+          </property>
+          <item>
+           <widget class="VariogramInput" name="Variogram"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Noise Variogram</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QCheckBox" name="is_bias">
+         <property name="text">
+          <string>Error (bias) present in the block values</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="bias_group">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QRadioButton" name="is_error_bias_constant">
+              <property name="text">
+               <string>Constant</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <attribute name="buttonGroup">
+               <string>buttonGroup_2</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="constant_bias"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="is_error_bias_local">
+            <property name="text">
+             <string>Spatially varying</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string>buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="SinglePropertySelector" name="local_bias">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="no_noise">
+         <property name="text">
+          <string>No noise</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string>buttonGroup_3</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="no_noise_correction">
+         <property name="text">
+          <string>No noise with correction</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string>buttonGroup_3</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="is_stationary_noise">
+         <property name="text">
+          <string>Stationary correlated noise</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string>buttonGroup_3</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="is_local_noise">
+         <property name="text">
+          <string>Locally varying white noise</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string>buttonGroup_3</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="SinglePropertySelector" name="local_noise_property">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="VariogramInput" name="Variogram_noise">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>608</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>25</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SinglePropertySelector</class>
+   <extends>QComboBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VariogramInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/variogram_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>EllipsoidInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/ellipsoid_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NonParamCdfInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/non_param_cdf_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GridSelector</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AdvancedNeighborhoodInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/neighborhood_filter_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PropertySelector</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">gridselector.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">trendcomponents.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">singlepropertyselector.h</include>
+  <include location="local">propertyselector.h</include>
+  <include location="local">ellipsoidinput.h</include>
+  <include location="local">gstl_table.h</include>
+  <include location="local">gstl_table.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">nonparamcdfinput.h</include>
+  <include location="local">propertyselector.h</include>
+  <include location="local">lowertailcdfinput.h</include>
+  <include location="local">uppertailcdfinput.h</include>
+  <include location="local">variograminput.h</include>
+ </includes>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Hard_Data</sender>
+   <signal>object_changed(QString)</signal>
+   <receiver>nonParamCdf</receiver>
+   <slot>setReferenceGrid(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Hard_Data</sender>
+   <signal>property_changed(QString)</signal>
+   <receiver>nonParamCdf</receiver>
+   <slot>setReferenceProperty(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>is_bias</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>bias_group</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>is_error_bias_constant</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>constant_bias</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>156</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>is_error_bias_local</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>local_bias</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Coarse_Grid_Name</sender>
+   <signal>object_changed(QString)</signal>
+   <receiver>local_noise_property</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>is_stationary_noise</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Variogram_noise</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>613</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>is_local_noise</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>local_noise_property</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

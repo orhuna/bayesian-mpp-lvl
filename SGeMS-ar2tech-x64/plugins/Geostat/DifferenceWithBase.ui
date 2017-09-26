@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Postsim</class>
+ <widget class="QWidget" name="Postsim">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Postsim</string>
+  </property>
+  <property name="AlgorithmCategory" stdset="0">
+   <string>Utilities</string>
+  </property>
+  <property name="AlgorithmDescription" stdset="0">
+   <string>Comparison with a reference property</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="GridSelector" name="Grid">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>130</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Base (reference property)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="SinglePropertySelector" name="prop_base"/>
+   </item>
+   <item>
+    <widget class="OrderedPropertySelector" name="props">
+     <property name="title">
+      <string>Properties to be substracted</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>2</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>SinglePropertySelector</class>
+   <extends>QComboBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OrderedPropertySelector</class>
+   <extends>GsTLGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GsTLGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GridSelector</class>
+   <extends>QTabWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">gridselector.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">orderedpropertyselector.h</include>
+  <include location="local">multipropertyselector.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+ </includes>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Grid</sender>
+   <signal>activated(QString)</signal>
+   <receiver>props</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Grid</sender>
+   <signal>activated(QString)</signal>
+   <receiver>prop_base</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

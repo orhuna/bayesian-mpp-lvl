@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClusteringFromCentroids</class>
+ <widget class="QWidget" name="ClusteringFromCentroids">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>258</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Clustering from centroids</string>
+  </property>
+  <property name="AlgorithmCategory" stdset="0">
+   <string>Utilities</string>
+  </property>
+  <property name="AlgorithmDescription" stdset="0">
+   <string>Clustering from centroids</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="GridSelector" name="grid_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="textLabel1_3">
+          <property name="text">
+           <string>Name of Output Property</string>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="clusters_property_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>File with centroids</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="FileChooser" name="centroid_file_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="OrderedPropertySelector" name="property_names">
+        <property name="title">
+         <string>Input Properties</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>92</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>OrderedPropertySelector</class>
+   <extends>GsTLGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>FileChooser</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/filechooser.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GsTLGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GridSelector</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">propertyselector.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">ellipsoidinput.h</include>
+  <include location="local">gstl_table.h</include>
+  <include location="local">gstl_table.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">filechooser.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+ </includes>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>grid_name</sender>
+   <signal>activated(QString)</signal>
+   <receiver>property_names</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

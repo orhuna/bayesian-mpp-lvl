@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bcovar</class>
+ <widget class="QWidget" name="bcovar">
+  <property name="AlgorithmCategory" stdset="0">
+   <string>Utilities</string>
+  </property>
+  <property name="AlgorithmDescription" stdset="0">
+   <string>block covariance calculation</string>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>386</width>
+    <height>2990</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>bcovar</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget2">
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab1">
+      <attribute name="title">
+       <string>General</string>
+      </attribute>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="Q3GroupBox" name="groupBox30_2">
+         <property name="title">
+          <string>Grid Name</string>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="GridSelector" name="Grid_Name"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="groupBox25_3_2_3">
+         <property name="maximumSize">
+          <size>
+           <width>32767</width>
+           <height>32767</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Block Covariance Computation Approach</string>
+         </property>
+         <property name="frameShape">
+          <enum>Q3GroupBox::GroupBoxPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>Q3GroupBox::Sunken</enum>
+         </property>
+         <layout class="QVBoxLayout">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="margin">
+           <number>14</number>
+          </property>
+          <item>
+           <widget class="QComboBox" name="Block_Cov_Approach">
+            <item>
+             <property name="text">
+              <string>FFT with Covariance-Table</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Integration with Covariance-Table</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="groupBox35">
+         <property name="title">
+          <string>Covariance Calculation Type</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="0" column="0">
+           <widget class="QComboBox" name="Cov_Cal_Type">
+            <item>
+             <property name="text">
+              <string>Block-to-Point Cov. Map</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Point-to-Point Cov. Map</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Block-to-Block Cov. Value</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Block-to-Point Cov. Value</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Point-to-Point Cov. Value</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="BlockCovMapBox">
+         <property name="title">
+          <string>Block-to-Point Cov. Map Parameters</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Block-to-Point Cov. Map</string>
+         </property>
+         <property name="displayed" stdset="0">
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2">
+              <property name="text">
+               <string>Block index value</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>41</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Block_Index_for_Map"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="textLabel3_3_3_2_3">
+            <property name="text">
+             <string>Output map/cube name</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Block_Cov_Output_Prop_Name"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="PointCovMapBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>Point-to-Point Cov. Map Parameters</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Point-to-Point Cov. Map</string>
+         </property>
+         <property name="displayed" stdset="0">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3">
+              <property name="text">
+               <string>Point I J K location</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer49">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>41</width>
+                <height>21</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Point_IJK_for_Point_Cov_Map">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="textLabel3_3_3_2_3_2">
+            <property name="text">
+             <string>Output map/cube name</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Point_Cov_Output_Prop_Name"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="BlockBlockCovBox">
+         <property name="title">
+          <string>Block-to-Block Cov. Value Parameters</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Block-to-Block Cov. Value</string>
+         </property>
+         <property name="displayed" stdset="0">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2_2">
+              <property name="text">
+               <string>First block index value</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>70</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="First_Block_Index"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2_2_2">
+              <property name="text">
+               <string>Second block index value</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48_2_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>60</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Second_Block_Index"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="BlockPointCovBox">
+         <property name="title">
+          <string>Block-to-Point Cov. Value Parameters</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Block-to-Point Cov. Value</string>
+         </property>
+         <property name="displayed" stdset="0">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2_2_3">
+              <property name="text">
+               <string>Block index value</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48_2_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>70</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Block_Index_for_BP_Cov"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2_2_2_2">
+              <property name="text">
+               <string>Point I J K location</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48_2_2_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>70</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Point_IJK_for_BP_Cov">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="PointPointCovBox">
+         <property name="title">
+          <string>Point-to-Point Cov. Value Parameters</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Point-to-Point Cov. Value</string>
+         </property>
+         <property name="displayed" stdset="0">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2_2_2_2_2_2">
+              <property name="text">
+               <string>First point I J K location</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48_2_2_2_2_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="First_Point_IJK">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <widget class="QLabel" name="textLabel3_3_3_2_2_2_2_2">
+              <property name="text">
+               <string>Second point I J K location</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer48_2_2_2_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>30</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Second_Point_IJK">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="Spacer13_2_2_2_4_2_3_3_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab2">
+      <attribute name="title">
+       <string>Block Data</string>
+      </attribute>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="Q3ButtonGroup" name="BlockDataSelectBox">
+         <property name="title">
+          <string>Blcok Data From:</string>
+         </property>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QRadioButton" name="Block_From_File">
+            <property name="text">
+             <string>From File</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="Block_From_Pset">
+            <property name="text">
+             <string>From Point Set Object</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="BlockDataFileBox">
+         <property name="title">
+          <string>Block Data From File:</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Block_From_File</string>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="FileChooser" name="Block_Data_File"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="ObjectsBoxAll">
+         <property name="title">
+          <string>Block Data From Point Set Objects:</string>
+         </property>
+         <property name="keyword" stdset="0">
+          <string>Block_From_Pset</string>
+         </property>
+         <property name="displayed" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="activated" stdset="0">
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="GsTLGroupBox" name="ObjectsBox1">
+            <property name="title">
+             <string/>
+            </property>
+            <property name="keyword" stdset="0">
+             <string>ObjectRadioButton</string>
+            </property>
+            <property name="displayed" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="activated" stdset="0">
+             <bool>true</bool>
+            </property>
+            <layout class="QVBoxLayout">
+             <item>
+              <layout class="QHBoxLayout">
+               <item>
+                <widget class="QLabel" name="TextLabel1_6_3">
+                 <property name="text">
+                  <string>Number of blocks</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="Number_of_Blocks"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="spacer33_3_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="Line" name="line1">
+               <property name="frameShape">
+                <enum>QFrame::HLine</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="textLabel1">
+               <property name="text">
+                <string>&lt;b&gt;Point set objects&lt;/b&gt;</string>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_0"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_1"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_2"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_3"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_4"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_5"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_6"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_7"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_8"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_9"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_10"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_11"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_12"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_13"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_14"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_15"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_16"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_17"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_18"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_19"/>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="AddMoreBlock">
+               <property name="text">
+                <string>Add more blocks</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="GsTLGroupBox" name="ObjectsBox2">
+            <property name="title">
+             <string/>
+            </property>
+            <property name="keyword" stdset="0">
+             <string>AddMoreBlock2</string>
+            </property>
+            <property name="displayed" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="activated" stdset="0">
+             <bool>true</bool>
+            </property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="GridSelector" name="Block_Grid_20"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_21"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_22"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_23"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_24"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_25"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_26"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_27"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_28"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_29"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_30"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_31"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_32"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_33"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_34"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_35"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_36"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_37"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_38"/>
+             </item>
+             <item>
+              <widget class="GridSelector" name="Block_Grid_39"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="spacer33_3_2_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab3">
+      <attribute name="title">
+       <string>Variogram</string>
+      </attribute>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="Q3GroupBox" name="GroupBox5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>Variogram</string>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="VariogramInput" name="Variogram_Cov">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="spacer34">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>21</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer name="spacer33_3_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>FileChooser</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/filechooser.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VariogramInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/variogram_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GsTLGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GridSelector</class>
+   <extends>QTabWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3ButtonGroup</class>
+   <extends>Q3GroupBox</extends>
+   <header>Qt3Support/Q3ButtonGroup</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">gridselector.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">filechooser.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gstlgroupbox.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">gridselector.h</include>
+  <include location="local">variograminput.h</include>
+ </includes>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Cov_Cal_Type</sender>
+   <signal>activated(QString)</signal>
+   <receiver>PointPointCovBox</receiver>
+   <slot>setShown(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cov_Cal_Type</sender>
+   <signal>activated(QString)</signal>
+   <receiver>BlockPointCovBox</receiver>
+   <slot>setShown(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cov_Cal_Type</sender>
+   <signal>activated(QString)</signal>
+   <receiver>BlockBlockCovBox</receiver>
+   <slot>setShown(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cov_Cal_Type</sender>
+   <signal>activated(QString)</signal>
+   <receiver>PointCovMapBox</receiver>
+   <slot>setShown(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cov_Cal_Type</sender>
+   <signal>activated(QString)</signal>
+   <receiver>BlockCovMapBox</receiver>
+   <slot>setShown(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Block_From_File</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>BlockDataFileBox</receiver>
+   <slot>setShown(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Block_From_Pset</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ObjectsBoxAll</receiver>
+   <slot>setShown(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddMoreBlock</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ObjectsBox2</receiver>
+   <slot>setShown(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

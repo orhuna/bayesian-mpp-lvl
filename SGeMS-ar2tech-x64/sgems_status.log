@@ -1,0 +1,2550 @@
+
+
+ registering math library 
+Registration of continuous distributions completed
+
+Registration of continuous distributions completed
+
+|- (directory)
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+
+
+ registering appli library 
+Registration done
+
+Creating item models factory
+
+
+ creating actions directory 
+|- (directory)
+|- Actions
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- Project
+   |- (project)
+|- QItemModels
+   |- (directory)
+
+
+ registering actions library 
+Registration done 
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (IndicatorCoding)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- Project
+   |- (project)
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+
+
+ registering filters library
+Registration done
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (IndicatorCoding)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveProject)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+
+
+ registering geostat library
+Registration done
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (IndicatorCoding)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveProject)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (Parameters_handler)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+registering grid library
+Creating Downscaler manager
+Creating Categorical definition manager
+Creating transformer manager
+Creating Grid_filter manager
+Registration done
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (IndicatorCoding)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveProject)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- CategoricalDefinitions
+   |- (categoricaldefinition)
+   |- Default
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (Parameters_handler)
+|- GridFilters
+   |- (Bounded by)
+   |- (Bounded by x coords)
+   |- (Bounded by y coords)
+   |- (Bounded by z coords)
+   |- (Category)
+   |- (Greater or equal than)
+   |- (Greater than)
+   |- (Intersection)
+   |- (Less or equal than)
+   |- (Less than)
+   |- (Log name)
+   |- (Region)
+   |- (Union)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- GridObject
+   |- (directory)
+   |- Downscalers
+      |- (Cgrid)
+      |- (Masked_grid)
+   |- Model
+      |- (Structured_grid)
+      |- (cgrid)
+      |- (log_grid)
+      |- (point_set)
+      |- (reduced_grid)
+      |- (rgrid)
+   |- PropertyCopier
+      |- (Cgrid;;Cgrid)
+      |- (Cgrid;;Point_set)
+      |- (Log_data_grid;;Cgrid)
+      |- (Log_data_grid;;Log_data_grid)
+      |- (Log_data_grid;;Masked_grid)
+      |- (Log_data_grid;;Structured_grid)
+      |- (Masked_grid;;Masked_grid)
+      |- (Masked_grid;;Point_set)
+      |- (Point_set;;Cgrid)
+      |- (Point_set;;Masked_grid)
+      |- (Point_set;;Point_set)
+      |- (Point_set;;Structured_grid)
+   |- Transformer
+      |- (PCA_transformer)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+
+
+ registering charts library
+Creating EDA charts
+Registration done
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (IndicatorCoding)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveProject)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- CategoricalDefinitions
+   |- (categoricaldefinition)
+   |- Default
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- EdaCharts
+   |- (CategoricalHistogram)
+   |- (ContinuousHistogram)
+   |- (Hole analysis)
+   |- (Scatter-plot)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (Parameters_handler)
+|- GridFilters
+   |- (Bounded by)
+   |- (Bounded by x coords)
+   |- (Bounded by y coords)
+   |- (Bounded by z coords)
+   |- (Category)
+   |- (Greater or equal than)
+   |- (Greater than)
+   |- (Intersection)
+   |- (Less or equal than)
+   |- (Less than)
+   |- (Log name)
+   |- (Region)
+   |- (Union)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- GridObject
+   |- (directory)
+   |- Downscalers
+      |- (Cgrid)
+      |- (Masked_grid)
+   |- Model
+      |- (Structured_grid)
+      |- (cgrid)
+      |- (log_grid)
+      |- (point_set)
+      |- (reduced_grid)
+      |- (rgrid)
+   |- PropertyCopier
+      |- (Cgrid;;Cgrid)
+      |- (Cgrid;;Point_set)
+      |- (Log_data_grid;;Cgrid)
+      |- (Log_data_grid;;Log_data_grid)
+      |- (Log_data_grid;;Masked_grid)
+      |- (Log_data_grid;;Structured_grid)
+      |- (Masked_grid;;Masked_grid)
+      |- (Masked_grid;;Point_set)
+      |- (Point_set;;Cgrid)
+      |- (Point_set;;Masked_grid)
+      |- (Point_set;;Point_set)
+      |- (Point_set;;Structured_grid)
+   |- Transformer
+      |- (PCA_transformer)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+registering qt plugins library
+Registration done
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (IndicatorCoding)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveProject)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- CategoricalDefinitions
+   |- (categoricaldefinition)
+   |- Default
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- EdaCharts
+   |- (CategoricalHistogram)
+   |- (ContinuousHistogram)
+   |- (Hole analysis)
+   |- (Scatter-plot)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (Parameters_handler)
+|- GridFilters
+   |- (Bounded by)
+   |- (Bounded by x coords)
+   |- (Bounded by y coords)
+   |- (Bounded by z coords)
+   |- (Category)
+   |- (Greater or equal than)
+   |- (Greater than)
+   |- (Intersection)
+   |- (Less or equal than)
+   |- (Less than)
+   |- (Log name)
+   |- (Region)
+   |- (Union)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- GridObject
+   |- (directory)
+   |- Downscalers
+      |- (Cgrid)
+      |- (Masked_grid)
+   |- Model
+      |- (Structured_grid)
+      |- (cgrid)
+      |- (log_grid)
+      |- (point_set)
+      |- (reduced_grid)
+      |- (rgrid)
+   |- PropertyCopier
+      |- (Cgrid;;Cgrid)
+      |- (Cgrid;;Point_set)
+      |- (Log_data_grid;;Cgrid)
+      |- (Log_data_grid;;Log_data_grid)
+      |- (Log_data_grid;;Masked_grid)
+      |- (Log_data_grid;;Structured_grid)
+      |- (Masked_grid;;Masked_grid)
+      |- (Masked_grid;;Point_set)
+      |- (Point_set;;Cgrid)
+      |- (Point_set;;Masked_grid)
+      |- (Point_set;;Point_set)
+      |- (Point_set;;Structured_grid)
+   |- Transformer
+      |- (PCA_transformer)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+   |- GridFilters
+      |- (Bounded by x coords)
+      |- (Bounded by y coords)
+      |- (Bounded by z coords)
+      |- (Category)
+      |- (Greater than)
+      |- (Less than)
+      |- (Region)
+
+
+ registering gui library
+Creating Project_view manager
+Creating QWidget_value_accessors manager
+Creating Colorscales manager
+Creating VTK props manager
+Creating Qt summary descriptions manager
+Creating colormap factory
+Creating continuous colormap factory
+Creating categorical colormap factory
+Creating item models factory
+Creating preferences viewer
+Creating grid preference viewer factory
+Creating property preference viewer factory
+Creating region preference viewer factory
+Creating region preference viewer factory
+Creating Custom Menus
+Registration done
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DisplayObject)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (HideObject)
+   |- (IndicatorCoding)
+   |- (LoadCameraSettings)
+   |- (LoadColorBar)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (ResizeCameraWindow)
+   |- (RotateCamera)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveCameraSettings)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveHistogram)
+   |- (SaveProject)
+   |- (SaveQQplot)
+   |- (SaveScatterplot)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (ShowHistogram)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (TakeSnapshot)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- CategoricalDefinitions
+   |- (categoricaldefinition)
+   |- Default
+|- Colormaps
+   |- (directory)
+   |- Categorical
+      |- (ColormapCategorical)
+   |- Continuous
+      |- (ColormapContinuous)
+|- Colorscales
+   |- (colorscale)
+|- ContextMenus
+   |- (CategoricalProperty)
+   |- (Cgrid)
+   |- (ContinuousProperty)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Region)
+   |- (Structured_grid)
+   |- CategoricalProperty
+   |- Cgrid
+   |- ContinuousProperty
+   |- Log_data_grid
+   |- Masked_grid
+   |- Point_set
+   |- Region
+   |- Structured_grid
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- EdaCharts
+   |- (CategoricalHistogram)
+   |- (ContinuousHistogram)
+   |- (Hole analysis)
+   |- (Scatter-plot)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (Parameters_handler)
+      |- (QCheckBox)
+      |- (QComboBox)
+      |- (QDoubleSpinBox)
+      |- (QLineEdit)
+      |- (QRadioButton)
+      |- (QSpinBox)
+      |- (QTableWidget)
+      |- (Value_collector)
+|- GridFilters
+   |- (Bounded by)
+   |- (Bounded by x coords)
+   |- (Bounded by y coords)
+   |- (Bounded by z coords)
+   |- (Category)
+   |- (Greater or equal than)
+   |- (Greater than)
+   |- (Intersection)
+   |- (Less or equal than)
+   |- (Less than)
+   |- (Log name)
+   |- (Region)
+   |- (Union)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- GridObject
+   |- (directory)
+   |- Downscalers
+      |- (Cgrid)
+      |- (Masked_grid)
+   |- Model
+      |- (Structured_grid)
+      |- (cgrid)
+      |- (log_grid)
+      |- (point_set)
+      |- (reduced_grid)
+      |- (rgrid)
+   |- PropertyCopier
+      |- (Cgrid;;Cgrid)
+      |- (Cgrid;;Point_set)
+      |- (Log_data_grid;;Cgrid)
+      |- (Log_data_grid;;Log_data_grid)
+      |- (Log_data_grid;;Masked_grid)
+      |- (Log_data_grid;;Structured_grid)
+      |- (Masked_grid;;Masked_grid)
+      |- (Masked_grid;;Point_set)
+      |- (Point_set;;Cgrid)
+      |- (Point_set;;Masked_grid)
+      |- (Point_set;;Point_set)
+      |- (Point_set;;Structured_grid)
+   |- QtSummaryDescription
+      |- (Cgrid)
+      |- (Masked_grid)
+      |- (Point_set)
+   |- Transformer
+      |- (PCA_transformer)
+   |- vtkProps
+      |- (Cgrid)
+      |- (Log_data_grid)
+      |- (Masked_grid)
+      |- (Point_set)
+      |- (Structured_grid)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- ObjectParamViewers
+   |- (directory)
+   |- GridParamViewers
+      |- (Cgrid)
+      |- (Log_data_grid)
+      |- (Masked_grid)
+      |- (Point_set)
+      |- (Structured_grid)
+   |- GroupParamViewers
+      |- (GroupParamViewer)
+   |- PropParamViewers
+      |- (PropertyParamViewer)
+   |- RegionParamViewers
+      |- (RegionParamViewer)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- ProjectView
+   |- (vtk_view)
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+   |- (project_model)
+   |- GridFilters
+      |- (Bounded by x coords)
+      |- (Bounded by y coords)
+      |- (Bounded by z coords)
+      |- (Category)
+      |- (Greater than)
+      |- (Less than)
+      |- (Region)
+
+
+ registering extragui library
+Getting QT_wrappers manager
+Registration done
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DisplayObject)
+   |- (DownscaleGrid)
+   |- (ExtractCellVolume)
+   |- (Help)
+   |- (HideObject)
+   |- (IndicatorCoding)
+   |- (LoadCameraSettings)
+   |- (LoadColorBar)
+   |- (LoadContinuousDistribution)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (ResizeCameraWindow)
+   |- (RotateCamera)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveCameraSettings)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveHistogram)
+   |- (SaveProject)
+   |- (SaveQQplot)
+   |- (SaveScatterplot)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (ShowHistogram)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (TakeSnapshot)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- CategoricalDefinitions
+   |- (categoricaldefinition)
+   |- Default
+|- Colormaps
+   |- (directory)
+   |- Categorical
+      |- (ColormapCategorical)
+   |- Continuous
+      |- (ColormapContinuous)
+|- Colorscales
+   |- (colorscale)
+|- ContextMenus
+   |- (CategoricalProperty)
+   |- (Cgrid)
+   |- (ContinuousProperty)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Region)
+   |- (Structured_grid)
+   |- CategoricalProperty
+   |- Cgrid
+   |- ContinuousProperty
+   |- Log_data_grid
+   |- Masked_grid
+   |- Point_set
+   |- Region
+   |- Structured_grid
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- EdaCharts
+   |- (CategoricalHistogram)
+   |- (ContinuousHistogram)
+   |- (Hole analysis)
+   |- (Scatter-plot)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (AdvancedNeighborhoodInput)
+      |- (EllipsoidInput)
+      |- (FileChooser)
+      |- (GridSelector)
+      |- (GridSelectorBasic)
+      |- (GsTLTable)
+      |- (KrigingTypeSelector)
+      |- (LowerTailCdfInput)
+      |- (MultiPropertyGroupSelector)
+      |- (MultiPropertySelector)
+      |- (MultiRegionSelector)
+      |- (NonParamCdfInput)
+      |- (OctantSearchInput)
+      |- (OrderedCategoricalPropertySelector)
+      |- (OrderedPropertySelector)
+      |- (Parameters_handler)
+      |- (PropertySelector)
+      |- (PropertySelectorNoRegion)
+      |- (QCheckBox)
+      |- (QComboBox)
+      |- (QDoubleSpinBox)
+      |- (QLineEdit)
+      |- (QRadioButton)
+      |- (QSpinBox)
+      |- (QTableWidget)
+      |- (SinglePropertyGroupSelector)
+      |- (SinglePropertySelector)
+      |- (SingleWeightPropertySelector)
+      |- (TrendComponents)
+      |- (UpperTailCdfInput)
+      |- (Value_collector)
+      |- (VariogramInput)
+|- GridFilters
+   |- (Bounded by)
+   |- (Bounded by x coords)
+   |- (Bounded by y coords)
+   |- (Bounded by z coords)
+   |- (Category)
+   |- (Greater or equal than)
+   |- (Greater than)
+   |- (Intersection)
+   |- (Less or equal than)
+   |- (Less than)
+   |- (Log name)
+   |- (Region)
+   |- (Union)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+|- GridObject
+   |- (directory)
+   |- Downscalers
+      |- (Cgrid)
+      |- (Masked_grid)
+   |- Model
+      |- (Structured_grid)
+      |- (cgrid)
+      |- (log_grid)
+      |- (point_set)
+      |- (reduced_grid)
+      |- (rgrid)
+   |- PropertyCopier
+      |- (Cgrid;;Cgrid)
+      |- (Cgrid;;Point_set)
+      |- (Log_data_grid;;Cgrid)
+      |- (Log_data_grid;;Log_data_grid)
+      |- (Log_data_grid;;Masked_grid)
+      |- (Log_data_grid;;Structured_grid)
+      |- (Masked_grid;;Masked_grid)
+      |- (Masked_grid;;Point_set)
+      |- (Point_set;;Cgrid)
+      |- (Point_set;;Masked_grid)
+      |- (Point_set;;Point_set)
+      |- (Point_set;;Structured_grid)
+   |- QtSummaryDescription
+      |- (Cgrid)
+      |- (Masked_grid)
+      |- (Point_set)
+   |- Transformer
+      |- (PCA_transformer)
+   |- vtkProps
+      |- (Cgrid)
+      |- (Log_data_grid)
+      |- (Masked_grid)
+      |- (Point_set)
+      |- (Structured_grid)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (csv)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+|- ObjectParamViewers
+   |- (directory)
+   |- GridParamViewers
+      |- (Cgrid)
+      |- (Log_data_grid)
+      |- (Masked_grid)
+      |- (Point_set)
+      |- (Structured_grid)
+   |- GroupParamViewers
+      |- (GroupParamViewer)
+   |- PropParamViewers
+      |- (PropertyParamViewer)
+   |- RegionParamViewers
+      |- (RegionParamViewer)
+|- OutputFilters
+   |- (Distribution)
+   |- (csv)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- ProjectView
+   |- (vtk_view)
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+   |- (project_model)
+   |- GridFilters
+      |- (Bounded by x coords)
+      |- (Bounded by y coords)
+      |- (Bounded by z coords)
+      |- (Category)
+      |- (Greater than)
+      |- (Less than)
+      |- (Region)
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ar2gems-unstructured-grid.dll...
+
+
+ registering action Pset_to_delaunay
+
+
+ registering action Pset_to_delaunay_2d
+Registering ugrid
+Registering ugrid geometry io
+Registering delaunay_triangulation grid vtk prop 
+Creating ugrid preference viewer factory
+
+
+ registering stl filters library
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ar2gems-uq-core.dll...
+
+
+ registering data metric library
+
+
+ registering Scalar data metric
+
+
+ registering vector data
+
+
+ registering time series data
+
+
+ registering kernel library
+
+
+ registering kernel Euclidean_kernel
+
+
+ registering Manhattan_kernel
+
+
+ registering kernel Gaussian_kernel
+
+
+ registering MDS Space
+
+
+ registering MDS Space
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ar2gems-uq-gui.dll...
+
+
+ registering actions mds_action
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ar2gems-uq-metrics.dll...
+
+
+ registering action mds_action
+
+
+ registering action kmeans_action
+
+
+ registering action GenerateMetrics
+
+
+ registering algo Metric_algo_mean
+
+
+ registering algo Metric_algo_variance
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/argems-grid-IO.dll...
+
+
+ registering filters library
+Registration done
+
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/bdsim.dll...
+
+
+ registering algo BlockSim
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ContactSim.dll...
+The plug-in was not loaded: QLibrary::load failed. Aborting 
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/CrescentShape.dll...
+The plug-in was not loaded: QLibrary::load failed. Aborting 
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/downscaling.dll...
+
+
+ registering algo downscaling_kriging
+
+
+ registering algo Downscaling-BSSIM
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/FactorialKriging.dll...
+
+
+ registering algo FactorialKriging
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/PoroPermSimulation.dll...
+
+
+ registering algo Markov_model_poro_perm
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/SpatialPostProcess.dll...
+
+
+ registering actions geobody_action
+
+
+ registering actions geobody_action
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TetrisShapeLibrary.dll...
+registering Geobody-simulator library
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TetrisXmlMaker.dll...
+registering Geobody-simulator library
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TiAlgorithms.dll...
+
+
+ registering algo snesim_partition
+... OK
+
+Trying to load plug-in: C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TiGenerator.dll...
+registering Geobody-simulator library
+
+
+ registering algo TetrisInterface
+
+
+ registering algo TetrisTiGen
+... OK
+
+|- (directory)
+|- Actions
+   |- (AddPropertiesToGroup)
+   |- (AddPropertyToGridFromBinaryFile)
+   |- (AddPropertyToGridFromTextFile)
+   |- (AddPropertyToGridWthNodeidFromTextFile)
+   |- (AssignCategoricalDefinition)
+   |- (CapProperty)
+   |- (ClearPropertyInsideRegion)
+   |- (ClearPropertyOutsideRegion)
+   |- (ClearPropertyValueFromProperty)
+   |- (ClearPropertyValueIf)
+   |- (ConvertCategoricalPropertyToSequential)
+   |- (ConvertPropertyInDefinitionToSequential)
+   |- (ConvertToCategoricalProperty)
+   |- (CopyProperty)
+   |- (CreateMgridFromCgrid)
+   |- (CreateTrend)
+   |- (DeleteContinuousDistribution)
+   |- (DeleteObjectProperties)
+   |- (DeleteObjectRegions)
+   |- (DeleteObjects)
+   |- (Delete_multivariate_transforms)
+   |- (DisplayObject)
+   |- (DownscaleGrid)
+   |- (ExternalResponseIO)
+   |- (ExtractCellVolume)
+   |- (GenerateMetrics)
+   |- (GeobodyDefinition)
+   |- (Help)
+   |- (HideObject)
+   |- (IndicatorCoding)
+   |- (LoadCameraSettings)
+   |- (LoadColorBar)
+   |- (LoadContinuousDistribution)
+   |- (LoadMetricData)
+   |- (LoadMetricSpace)
+   |- (LoadObjectFromFile)
+   |- (LoadProject)
+   |- (MDS)
+   |- (MDSFileIO)
+   |- (MergeObjectRegionsIntersection)
+   |- (MergeObjectRegionsUnion)
+   |- (Multivariate_back_transform)
+   |- (Multivariate_forward_transform)
+   |- (NewCartesianGrid)
+   |- (NewCategoricalCodeDefinition)
+   |- (NewCategoricalDefinition)
+   |- (NewParametricDistribution)
+   |- (NewPropertyGroup)
+   |- (NewRGrid)
+   |- (New_pca_transformer)
+   |- (Pset_to_delaunay)
+   |- (Pset_to_delaunay_2d)
+   |- (RemoveAllPropertiesFromGroup)
+   |- (RemoveGroup)
+   |- (RemovePropertiesFromGroup)
+   |- (ResizeCameraWindow)
+   |- (RotateCamera)
+   |- (RunGeostatAlgorithm)
+   |- (RunScript)
+   |- (SaveCameraSettings)
+   |- (SaveContinuousDistribution)
+   |- (SaveGeostatGrid)
+   |- (SaveHistogram)
+   |- (SaveMetricData)
+   |- (SaveMetricSpace)
+   |- (SaveProject)
+   |- (SaveQQplot)
+   |- (SaveScatterplot)
+   |- (ScaleProperty)
+   |- (SetActiveRegion)
+   |- (SetHarddata)
+   |- (SetRegionFromCategoricalPropertyIf)
+   |- (SetRegionFromComplement)
+   |- (SetRegionFromPropertyIf)
+   |- (ShowHistogram)
+   |- (SwapPropertyToDisk)
+   |- (SwapPropertyToRAM)
+   |- (TakeSnapshot)
+   |- (UpscaleGroup)
+   |- (UpscaleProperties)
+   |- (absolute)
+   |- (complement)
+   |- (cos)
+   |- (exp)
+   |- (inverse)
+   |- (kmeans)
+   |- (log)
+   |- (log10)
+   |- (logistic)
+   |- (logit)
+   |- (sin)
+   |- (sqrt)
+   |- (square)
+   |- (standardize)
+   |- (unitScaling)
+|- CategoricalDefinitions
+   |- (categoricaldefinition)
+   |- Default
+|- Colormaps
+   |- (directory)
+   |- Categorical
+      |- (ColormapCategorical)
+   |- Continuous
+      |- (ColormapContinuous)
+|- Colorscales
+   |- (colorscale)
+   |- cyan_red
+   |- gray
+   |- hot
+   |- rainbow
+   |- rainbow2
+   |- rainbow3
+   |- red_blue
+   |- whi_blue
+|- ContextMenus
+   |- (CategoricalProperty)
+   |- (Cgrid)
+   |- (ContinuousProperty)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Region)
+   |- (Structured_grid)
+   |- (Surface_grid)
+   |- (Tetrahedron_grid)
+   |- (Unstructured_grid)
+   |- CategoricalProperty
+   |- Cgrid
+   |- ContinuousProperty
+   |- Log_data_grid
+   |- Masked_grid
+   |- Point_set
+   |- Region
+   |- Structured_grid
+   |- Surface_grid
+   |- Tetrahedron_grid
+   |- Unstructured_grid
+|- Distributions
+   |- (directory)
+   |- Categorical
+      |- (Discrete)
+   |- Continuous
+      |- (Beta)
+      |- (Exponential)
+      |- (Extreme value)
+      |- (Gamma)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Logistic)
+      |- (Non-parametric)
+      |- (Pareto)
+      |- (Rayleigh)
+      |- (Triangular)
+      |- (Uniform)
+      |- (Weibull)
+|- EdaCharts
+   |- (CategoricalHistogram)
+   |- (ContinuousHistogram)
+   |- (Hole analysis)
+   |- (MDS Space)
+   |- (Responses)
+   |- (Scatter-plot)
+|- GeobodySimulation
+   |- (directory)
+   |- Distributions
+      |- (Constant)
+      |- (Exponential)
+      |- (Gaussian)
+      |- (LogNormal)
+      |- (Triangular)
+      |- (Uniform)
+   |- GeoObjects
+      |- (Channel-Lobe-Crevasse)
+      |- (Element)
+      |- (Multiple Objects Stacking)
+      |- (Simple Carbonate Mound)
+      |- (Single Object Stacking)
+   |- Interfaces
+      |- (Cuboid)
+      |- (Difference)
+      |- (Ellipsoid)
+      |- (GaussianSinusoid)
+      |- (HalfEllipsoid)
+      |- (Intersection)
+      |- (Kernel)
+      |- (LobeShape)
+      |- (Sinusoid)
+      |- (Sphere)
+      |- (Union)
+      |- (Wireframe)
+   |- Shapes
+      |- (Cuboid)
+      |- (Cylinder)
+      |- (Difference)
+      |- (Ellipsoid)
+      |- (GaussianSinusoid)
+      |- (HalfEllipsoid)
+      |- (Intersection)
+      |- (Kernel)
+      |- (LobeShape)
+      |- (Sinusoid)
+      |- (SlopeTableShape)
+      |- (Sphere)
+      |- (Union)
+      |- (Wireframe)
+|- GeostatAlgo
+   |- (ClusteringFromCentroids)
+   |- (DifferenceWithBase)
+   |- (Downscaling-BSSIM)
+   |- (FactorialKriging)
+   |- (ImageProcess)
+   |- (KmeansClustering)
+   |- (LU_sim)
+   |- (Markov_model_poro_perm)
+   |- (Math_morphology)
+   |- (MeanData)
+   |- (NuTauModel)
+   |- (PostKriging)
+   |- (Postsim)
+   |- (Postsim_categorical)
+   |- (TetrisTiGen)
+   |- (VarianceData)
+   |- (blockSim)
+   |- (cokriging)
+   |- (cokriging-x-validation)
+   |- (cosgsim)
+   |- (cosisim)
+   |- (declus)
+   |- (downscaling_kriging)
+   |- (dssim)
+   |- (filtersim_cate)
+   |- (filtersim_cont)
+   |- (geobody)
+   |- (indicator_kriging)
+   |- (inverse-distance)
+   |- (kriging)
+   |- (kriging-x-validation)
+   |- (kriging_mean)
+   |- (moving_window)
+   |- (nearest-neighbor)
+   |- (sgsim)
+   |- (sisim)
+   |- (snesim_partition)
+   |- (snesim_std)
+   |- (trans)
+   |- (transcat)
+|- GeostatParamUtils
+   |- (directory)
+   |- XML
+      |- (AdvancedNeighborhoodInput)
+      |- (EllipsoidInput)
+      |- (FileChooser)
+      |- (GridSelector)
+      |- (GridSelectorBasic)
+      |- (GsTLTable)
+      |- (KrigingTypeSelector)
+      |- (LowerTailCdfInput)
+      |- (MultiPropertyGroupSelector)
+      |- (MultiPropertySelector)
+      |- (MultiRegionSelector)
+      |- (NonParamCdfInput)
+      |- (OctantSearchInput)
+      |- (OrderedCategoricalPropertySelector)
+      |- (OrderedPropertySelector)
+      |- (Parameters_handler)
+      |- (PropertySelector)
+      |- (PropertySelectorNoRegion)
+      |- (QCheckBox)
+      |- (QComboBox)
+      |- (QDoubleSpinBox)
+      |- (QLineEdit)
+      |- (QRadioButton)
+      |- (QSpinBox)
+      |- (QTableWidget)
+      |- (SinglePropertyGroupSelector)
+      |- (SinglePropertySelector)
+      |- (SingleWeightPropertySelector)
+      |- (TetrisInterface)
+      |- (TrendComponents)
+      |- (UpperTailCdfInput)
+      |- (Value_collector)
+      |- (VariogramInput)
+|- GridFilters
+   |- (Bounded by)
+   |- (Bounded by x coords)
+   |- (Bounded by y coords)
+   |- (Bounded by z coords)
+   |- (Category)
+   |- (Greater or equal than)
+   |- (Greater than)
+   |- (Intersection)
+   |- (Less or equal than)
+   |- (Less than)
+   |- (Log name)
+   |- (Region)
+   |- (Union)
+|- GridGeometryXML
+   |- (Cgrid)
+   |- (Log_data_grid)
+   |- (Masked_grid)
+   |- (Point_set)
+   |- (Structured_grid)
+   |- (Surface_grid)
+   |- (Tetrahedron_grid)
+   |- (Unstructured_grid)
+|- GridObject
+   |- (directory)
+   |- Downscalers
+      |- (Cgrid)
+      |- (Masked_grid)
+   |- Model
+      |- (Structured_grid)
+      |- (Surface_grid)
+      |- (Tetrahedron_grid)
+      |- (Unstructured_grid)
+      |- (cgrid)
+      |- (log_grid)
+      |- (point_set)
+      |- (reduced_grid)
+      |- (rgrid)
+   |- PropertyCopier
+      |- (Cgrid;;Cgrid)
+      |- (Cgrid;;Point_set)
+      |- (Log_data_grid;;Cgrid)
+      |- (Log_data_grid;;Log_data_grid)
+      |- (Log_data_grid;;Masked_grid)
+      |- (Log_data_grid;;Structured_grid)
+      |- (Masked_grid;;Masked_grid)
+      |- (Masked_grid;;Point_set)
+      |- (Point_set;;Cgrid)
+      |- (Point_set;;Masked_grid)
+      |- (Point_set;;Point_set)
+      |- (Point_set;;Structured_grid)
+   |- QtSummaryDescription
+      |- (Cgrid)
+      |- (Masked_grid)
+      |- (Point_set)
+   |- Transformer
+      |- (PCA_transformer)
+   |- vtkProps
+      |- (Cgrid)
+      |- (Log_data_grid)
+      |- (Masked_grid)
+      |- (Point_set)
+      |- (Structured_grid)
+      |- (Surface_grid)
+      |- (Tetrahedron_grid)
+      |- (Unstructured_grid)
+|- InputFilters
+   |- (directory)
+   |- Csv
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- Gslib
+      |- (cartesian grid)
+      |- (masked grid)
+      |- (point set)
+   |- TopLevel
+      |- (Distribution)
+      |- (Mds_space)
+      |- (Metric_data)
+      |- (Metric_project_data)
+      |- (csv)
+      |- (eclipse-corner-points)
+      |- (gslib)
+      |- (sgems)
+      |- (sgems_beta)
+      |- (streamsim)
+      |- (surface-stl)
+|- ObjectParamViewers
+   |- (directory)
+   |- GridParamViewers
+      |- (Cgrid)
+      |- (Log_data_grid)
+      |- (Masked_grid)
+      |- (Point_set)
+      |- (Structured_grid)
+      |- (Surface_grid)
+      |- (Tetrahedron_grid)
+      |- (Unstructured_grid)
+   |- GroupParamViewers
+      |- (GroupParamViewer)
+   |- PropParamViewers
+      |- (PropertyParamViewer)
+   |- RegionParamViewers
+      |- (RegionParamViewer)
+|- OutputFilters
+   |- (Distribution)
+   |- (Mds_space)
+   |- (Metric_data)
+   |- (Metric_project_data)
+   |- (csv)
+   |- (eclipse-corner-points)
+   |- (gslib)
+   |- (sgems)
+   |- (sgems_beta)
+   |- (streamsim)
+|- Project
+   |- (project)
+|- ProjectFilters
+   |- (project_filter)
+   |- project_filters
+|- ProjectView
+   |- (vtk_view)
+|- PythonGroupScripts
+   |- (pythongroupscript)
+|- PythonScripts
+   |- (pythonscript)
+|- QItemModels
+   |- (directory)
+   |- (project_model)
+   |- GridFilters
+      |- (Bounded by x coords)
+      |- (Bounded by y coords)
+      |- (Bounded by z coords)
+      |- (Category)
+      |- (Greater than)
+      |- (Less than)
+      |- (Region)
+|- extResponseFilter
+   |- (ExternalResponseFilter)
+   |- FilterExternalResponseInput
+|- kernel
+   |- (Euclidean)
+   |- (Gaussian3f)
+   |- (Manhattan)
+|- mds
+   |- (multi_dim_scaling)
+|- mdsIOFilter
+   |- (MDS_IO_filter)
+   |- FilterMDSInput
+   |- FilterMDSOutput
+|- metricData
+   |- (ContinuousDistribution)
+   |- (Scalar)
+   |- (TimeSeries)
+   |- (Vector)
+   |- (metric_data_manager)
+   |- metricRegistrar
+|- metricFilter
+   |- (metric_filter)
+   |- FilterMean
+   |- FilterVariance
+   |- PixelWiseValues
+Adding algorithm ClusteringFromCentroids to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ClusteringFromCentroids.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ClusteringFromCentroids.ui
+Adding to selector Utilities/ClusteringFromCentroids/Clustering from centroids
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ClusteringFromCentroids.ui
+Adding algorithm DifferenceWithBase to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/DifferenceWithBase.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/DifferenceWithBase.ui
+Adding to selector Utilities/DifferenceWithBase/Comparison with a reference property
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/DifferenceWithBase.ui
+Adding algorithm Downscaling-BSSIM to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Downscaling-BSSIM.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Downscaling-BSSIM.ui
+Adding to selector Downscaling/Downscaling-BSSIM/BSSIM : direct simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Downscaling-BSSIM.ui
+Adding algorithm FactorialKriging to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/FactorialKriging.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/FactorialKriging.ui
+Adding to selector Estimation/FactorialKriging/Simple Factorial Kriging
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/FactorialKriging.ui
+Adding algorithm ImageProcess to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ImageProcess.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ImageProcess.ui
+Adding to selector Utilities/ImageProcess/Image manipulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/ImageProcess.ui
+Adding algorithm KmeansClustering to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/KmeansClustering.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/KmeansClustering.ui
+Adding to selector Utilities/KmeansClustering/K-means clustering
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/KmeansClustering.ui
+Adding algorithm LU_sim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/LU_sim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/LU_sim.ui
+Adding to selector Simulation/LU_sim/Cholesky decomposition
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/LU_sim.ui
+Adding algorithm Markov_model_poro_perm to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Markov_model_poro_perm.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Markov_model_poro_perm.ui
+Adding to selector ERE 246/Markov_model_poro_perm/sequential gaussian co-simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Markov_model_poro_perm.ui
+Adding algorithm Math_morphology to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Math_morphology.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Math_morphology.ui
+Adding to selector Utilities/Math_morphology/Dilation and erosion
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Math_morphology.ui
+Adding algorithm MeanData to GUI selector
+Can't find file C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/MeanData.ui
+Aborting registration of algorithm MeanData
+
+Adding algorithm NuTauModel to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/NuTauModel.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/NuTauModel.ui
+Adding to selector Utilities/NuTauModel/Probability integration
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/NuTauModel.ui
+Adding algorithm PostKriging to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/PostKriging.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/PostKriging.ui
+Adding to selector Utilities/PostKriging/Kriging postprocessing
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/PostKriging.ui
+Adding algorithm Postsim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Postsim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Postsim.ui
+Adding to selector Utilities/Postsim/Simulation postprocessing
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Postsim.ui
+Adding algorithm Postsim_categorical to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Postsim_categorical.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Postsim_categorical.ui
+Adding to selector Utilities/Postsim_categorical/Simulation postprocessing for categorical attributes
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/Postsim_categorical.ui
+Adding algorithm TetrisTiGen to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TetrisTiGen.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TetrisTiGen.ui
+Adding to selector Training Image/TetrisTiGen/Training Image Generation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/TetrisTiGen.ui
+Adding algorithm VarianceData to GUI selector
+Can't find file C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/VarianceData.ui
+Aborting registration of algorithm VarianceData
+
+Adding algorithm blockSim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/blockSim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/blockSim.ui
+Adding to selector Simulation/blockSim/Sequential Gaussian Block Simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/blockSim.ui
+Adding algorithm cokriging to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cokriging.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cokriging.ui
+Adding to selector Estimation/cokriging/Kriging with secondary attribute
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cokriging.ui
+Adding algorithm cokriging-x-validation to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cokriging-x-validation.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cokriging-x-validation.ui
+Adding to selector Estimation/cokriging-x-validation/X-validation for cokriging with secondary attribute
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cokriging-x-validation.ui
+Adding algorithm cosgsim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cosgsim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cosgsim.ui
+Adding to selector Simulation/cosgsim/sequential gaussian co-simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cosgsim.ui
+Adding algorithm cosisim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cosisim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cosisim.ui
+Adding to selector Simulation/cosisim/Sequential indicator co-simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/cosisim.ui
+Adding algorithm declus to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/declus.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/declus.ui
+Adding to selector Utilities/declus/Cell Declustering
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/declus.ui
+Adding algorithm downscaling_kriging to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/downscaling_kriging.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/downscaling_kriging.ui
+Adding to selector Downscaling/downscaling_kriging/Downscaling (SK, OK)
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/downscaling_kriging.ui
+Adding algorithm dssim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/dssim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/dssim.ui
+Adding to selector Simulation/dssim/Direct sequential simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/dssim.ui
+Adding algorithm filtersim_cate to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/filtersim_cate.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/filtersim_cate.ui
+Adding to selector Simulation/filtersim_cate/Filter-based categorical simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/filtersim_cate.ui
+Adding algorithm filtersim_cont to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/filtersim_cont.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/filtersim_cont.ui
+Adding to selector Simulation/filtersim_cont/Filter-based continuous simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/filtersim_cont.ui
+Adding algorithm geobody to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/geobody.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/geobody.ui
+Adding to selector Utilities/geobody/Identify connected geobodies
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/geobody.ui
+Adding algorithm indicator_kriging to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/indicator_kriging.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/indicator_kriging.ui
+Adding to selector Estimation/indicator_kriging/Indicator kriging
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/indicator_kriging.ui
+Adding algorithm inverse-distance to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/inverse-distance.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/inverse-distance.ui
+Adding to selector Estimation/inverse-distance/Power-N inverse distance estimation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/inverse-distance.ui
+Adding algorithm kriging to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging.ui
+Adding to selector Estimation/kriging/SK, OK, KT and block kriging
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging.ui
+Adding algorithm kriging-x-validation to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging-x-validation.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging-x-validation.ui
+Adding to selector Estimation/kriging-x-validation/X-validation (SK, OK, KT)
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging-x-validation.ui
+Adding algorithm kriging_mean to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging_mean.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging_mean.ui
+Adding to selector Estimation/kriging_mean/Kriging of the mean
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/kriging_mean.ui
+Adding algorithm moving_window to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/moving_window.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/moving_window.ui
+Adding to selector Utilities/moving_window/Spatial Filtering
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/moving_window.ui
+Adding algorithm nearest-neighbor to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/nearest-neighbor.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/nearest-neighbor.ui
+Adding to selector Estimation/nearest-neighbor/Nearest neighbor estimation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/nearest-neighbor.ui
+Adding algorithm sgsim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/sgsim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/sgsim.ui
+Adding to selector Simulation/sgsim/Sequential Gaussian Simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/sgsim.ui
+Adding algorithm sisim to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/sisim.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/sisim.ui
+Adding to selector Simulation/sisim/Sequential indicator simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/sisim.ui
+Adding algorithm snesim_partition to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/snesim_partition.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/snesim_partition.ui
+Adding to selector Simulation/snesim_partition/SNESIM with search tree partitionning
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/snesim_partition.ui
+Adding algorithm snesim_std to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/snesim_std.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/snesim_std.ui
+Adding to selector Simulation/snesim_std/Single normal equation simulation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/snesim_std.ui
+Adding algorithm trans to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/trans.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/trans.ui
+Adding to selector Utilities/trans/Histogram transformation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/trans.ui
+Adding algorithm transcat to GUI selector
+Read xml of C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/transcat.ui
+category and description C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/transcat.ui
+Adding to selector Utilities/transcat/Categorical transformation
+Added to selector C:\Users\orhu8849\Desktop\code\PhD\bayesian-mpp-lvl\SGeMS-ar2tech-x64/plugins/Geostat/transcat.ui
+algo selector set up
+algo panel completed
+algo panel docked
+cli panel docked
+3D view panel initialized
+menu bar initialized

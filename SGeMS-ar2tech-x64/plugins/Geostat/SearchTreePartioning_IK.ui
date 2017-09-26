@@ -1,0 +1,1063 @@
+<ui version="4.0" >
+ <class>STP_IK</class>
+ <widget class="QWidget" name="STP_IK" >
+  <property name="AlgorithmCategory" stdset="0">
+   <string>Simulation</string>
+  </property>
+  <property name="AlgorithmDescription" stdset="0">
+   <string>Integration SNESIM and SISIM</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>939</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Partition Snesim IK</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QTabWidget" name="tabWidget2" >
+     <property name="currentIndex" >
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>General</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="Q3GroupBox" name="SimulationGrid" >
+         <property name="maximumSize" >
+          <size>
+           <width>32767</width>
+           <height>32767</height>
+          </size>
+         </property>
+         <property name="title" >
+          <string>Simulation Grid</string>
+         </property>
+         <property name="frameShape" >
+          <enum>Q3GroupBox::Box</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>Q3GroupBox::Sunken</enum>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <widget class="QLabel" name="TextLabel1" >
+            <property name="text" >
+             <string>Simulation Grid Name</string>
+            </property>
+            <property name="wordWrap" >
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="GridSelector" name="GridSelector_Sim" >
+            <property name="toolTip" >
+             <string>grid on which to perform the simulation</string>
+            </property>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="TextLabel2" >
+            <property name="text" >
+             <string>Property Name Prefix</string>
+            </property>
+            <property name="wordWrap" >
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Property_Name_Sim" >
+            <property name="maximumSize" >
+             <size>
+              <width>32767</width>
+              <height>32767</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" >
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <property name="leftMargin" >
+          <number>0</number>
+         </property>
+         <property name="topMargin" >
+          <number>0</number>
+         </property>
+         <property name="rightMargin" >
+          <number>0</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="TextLabel2_2_2_2" >
+           <property name="text" >
+            <string>Nb of realizations</string>
+           </property>
+           <property name="wordWrap" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Nb_Realizations" >
+           <property name="minimum" >
+            <number>1</number>
+           </property>
+           <property name="maximum" >
+            <number>10000</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" >
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <property name="leftMargin" >
+          <number>0</number>
+         </property>
+         <property name="topMargin" >
+          <number>0</number>
+         </property>
+         <property name="rightMargin" >
+          <number>0</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="TextLabel2_2_2_2_2" >
+           <property name="text" >
+            <string>Seed</string>
+           </property>
+           <property name="wordWrap" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Seed" >
+           <property name="maximum" >
+            <number>99999999</number>
+           </property>
+           <property name="value" >
+            <number>211175</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="SimulationGrid_2" >
+         <property name="maximumSize" >
+          <size>
+           <width>32767</width>
+           <height>160</height>
+          </size>
+         </property>
+         <property name="title" >
+          <string>Training Image</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>11</number>
+          </property>
+          <property name="topMargin" >
+           <number>11</number>
+          </property>
+          <property name="rightMargin" >
+           <number>11</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>11</number>
+          </property>
+          <item>
+           <widget class="PropertySelector" name="PropertySelector_Training" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="groupBox9" >
+         <property name="title" >
+          <string>Training Image Partition property</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <widget class="SinglePropertySelector" name="tiprop_partition" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" >
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <property name="leftMargin" >
+          <number>0</number>
+         </property>
+         <property name="topMargin" >
+          <number>0</number>
+         </property>
+         <property name="rightMargin" >
+          <number>0</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="TextLabel2_2_2_2_3" >
+           <property name="text" >
+            <string>Nb of Facies</string>
+           </property>
+           <property name="wordWrap" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Nb_Facies" >
+           <property name="maximum" >
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="GroupBox4" >
+         <property name="title" >
+          <string>Marginal Distribution</string>
+         </property>
+         <layout class="QHBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>11</number>
+          </property>
+          <property name="topMargin" >
+           <number>11</number>
+          </property>
+          <property name="rightMargin" >
+           <number>11</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>11</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="Marginal_Cdf" >
+            <property name="toolTip" >
+             <string>enter values separated by a space</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="groupBox6" >
+         <property name="title" >
+          <string>Snesim Conditioning Data</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <widget class="QLabel" name="textLabel1" >
+              <property name="text" >
+               <string>Max Conditioning Data</string>
+              </property>
+              <property name="wordWrap" >
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Max_Cond" >
+              <property name="minimum" >
+               <number>1</number>
+              </property>
+              <property name="maximum" >
+               <number>400</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="EllipsoidInput" name="Search_Ellipsoid" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>Conditioning</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="Q3GroupBox" name="GroupBox3" >
+         <property name="title" >
+          <string>Hard Data</string>
+         </property>
+         <layout class="QHBoxLayout" >
+          <item>
+           <widget class="PropertySelector" name="Hard_Data" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Q3GroupBox" name="groupBox9_2" >
+         <property name="title" >
+          <string>Snesim Data Partition</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <widget class="SinglePropertySelector" name="data_partition" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Use_ProbField" >
+         <property name="text" >
+          <string>Use Snesim Probability Field</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="GsTLGroupBox" name="gsTLGroupBox17" >
+         <property name="title" >
+          <string/>
+         </property>
+         <property name="displayed" stdset="0" >
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <layout class="QVBoxLayout" >
+            <item>
+             <widget class="OrderedPropertySelector" name="ProbField_properties" >
+              <property name="title" >
+               <string>Probability Maps for each Facies</string>
+              </property>
+              <property name="displayed" stdset="0" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Q3GroupBox" name="groupBox8" >
+            <property name="title" >
+             <string>Tau per multti grid, (from 1 to N)</string>
+            </property>
+            <layout class="QVBoxLayout" >
+             <item>
+              <layout class="QGridLayout" >
+               <item row="0" column="0" >
+                <widget class="QLabel" name="textLabel2" >
+                 <property name="text" >
+                  <string>Tau for TI information</string>
+                 </property>
+                 <property name="wordWrap" >
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" >
+                <widget class="QLineEdit" name="taus_soft" />
+               </item>
+               <item row="1" column="0" >
+                <widget class="QLabel" name="textLabel3_5" >
+                 <property name="text" >
+                  <string>Taus for soft (per multi grid)</string>
+                 </property>
+                 <property name="wordWrap" >
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1" >
+                <widget class="QLineEdit" name="taus_ti" />
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="GroupBox3_3" >
+         <property name="title" >
+          <string>IK soft and Interval Data</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <property name="leftMargin" >
+           <number>0</number>
+          </property>
+          <property name="topMargin" >
+           <number>0</number>
+          </property>
+          <property name="rightMargin" >
+           <number>0</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="TextLabel1_2_3_3" >
+            <property name="text" >
+             <string>Grid</string>
+            </property>
+            <property name="wordWrap" >
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="GridSelector" name="coded_grid" >
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>&lt;- None -></string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="OrderedPropertySelector" name="coded_props" >
+            <property name="title" >
+             <string>Indicator Properties</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>Advanced</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <layout class="QHBoxLayout" >
+         <item>
+          <widget class="QLabel" name="textLabel6" >
+           <property name="text" >
+            <string>cmin</string>
+           </property>
+           <property name="wordWrap" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Cmin" >
+           <property name="minimum" >
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" >
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <property name="leftMargin" >
+          <number>0</number>
+         </property>
+         <property name="topMargin" >
+          <number>0</number>
+         </property>
+         <property name="rightMargin" >
+          <number>0</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="TextLabel2_2_2_2_3_3_3" >
+           <property name="text" >
+            <string>Number of Multigrids</string>
+           </property>
+           <property name="wordWrap" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Nb_Multigrids_ADVANCED" >
+           <property name="minimum" >
+            <number>1</number>
+           </property>
+           <property name="maximum" >
+            <number>10</number>
+           </property>
+           <property name="value" >
+            <number>3</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="Use_Previous_Simulation" >
+         <property name="text" >
+          <string>Use previously simualted data</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="pre_sim_box" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+         <property name="title" >
+          <string>Previously Simulated data</string>
+         </property>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="SinglePropertySelector" name="Previous_Simulation_Prop" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>352</width>
+           <height>701</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4" >
+      <attribute name="title" >
+       <string>IK</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="QGroupBox" name="GroupBox9" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Minimum" hsizetype="Preferred" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title" >
+          <string>Search Ellipsoid</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>11</number>
+          </property>
+          <property name="topMargin" >
+           <number>11</number>
+          </property>
+          <property name="rightMargin" >
+           <number>11</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>11</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="TextLabel2_2_2_2_3_2" >
+              <property name="text" >
+               <string>Max conditioning data</string>
+              </property>
+              <property name="wordWrap" >
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Max_IK_Conditioning_Data" >
+              <property name="minimum" >
+               <number>0</number>
+              </property>
+              <property name="maximum" >
+               <number>200</number>
+              </property>
+              <property name="value" >
+               <number>18</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="EllipsoidInput" name="IK_Search_Ellipsoid" >
+            <property name="title" stdset="0" >
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CloneGroupBox" name="FullIkGroup" >
+         <property name="title" >
+          <string/>
+         </property>
+         <property name="displayed" stdset="0" >
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>11</number>
+          </property>
+          <property name="topMargin" >
+           <number>11</number>
+          </property>
+          <property name="rightMargin" >
+           <number>11</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>11</number>
+          </property>
+          <item>
+           <widget class="VariogramInput" name="Variogram_Full_Ik" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>GridSelector</class>
+   <extends>QComboBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PropertySelector</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SinglePropertySelector</class>
+   <extends>QComboBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OrderedPropertySelector</class>
+   <extends>GsTLGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VariogramInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/variogram_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GsTLGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EllipsoidInput</class>
+   <extends>QWidget</extends>
+   <header>GsTLAppli/extra/qtplugins/ellipsoid_input.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CloneGroupBox</class>
+   <extends>GsTLGroupBox</extends>
+   <header>GsTLAppli/extra/qtplugins/selectors.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget2</tabstop>
+  <tabstop>GridSelector_Sim</tabstop>
+  <tabstop>Property_Name_Sim</tabstop>
+  <tabstop>Nb_Realizations</tabstop>
+  <tabstop>Seed</tabstop>
+  <tabstop>Nb_Facies</tabstop>
+  <tabstop>Marginal_Cdf</tabstop>
+  <tabstop>Max_Cond</tabstop>
+  <tabstop>Use_ProbField</tabstop>
+  <tabstop>Cmin</tabstop>
+  <tabstop>Nb_Multigrids_ADVANCED</tabstop>
+ </tabstops>
+ <includes>
+  <include location="local" >gridselector.h</include>
+  <include location="local" >propertyselector.h</include>
+  <include location="local" >singlepropertyselector.h</include>
+  <include location="local" >gstl_table.h</include>
+  <include location="local" >propertyselector.h</include>
+  <include location="local" >singlepropertyselector.h</include>
+  <include location="local" >gstlgroupbox.h</include>
+  <include location="local" >orderedpropertyselector.h</include>
+  <include location="local" >multipropertyselector.h</include>
+ </includes>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>GridSelector_Sim</sender>
+   <signal>activated(QString)</signal>
+   <receiver>data_partition</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PropertySelector_Training</sender>
+   <signal>object_changed(QString)</signal>
+   <receiver>tiprop_partition</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GridSelector_Sim</sender>
+   <signal>activated(QString)</signal>
+   <receiver>ProbField_properties</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Use_ProbField</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>gsTLGroupBox17</receiver>
+   <slot>setShown(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Nb_Facies</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>FullIkGroup</receiver>
+   <slot>set_count(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>254</x>
+     <y>546</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>175</x>
+     <y>1080</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>coded_grid</sender>
+   <signal>activated(QString)</signal>
+   <receiver>coded_props</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>195</x>
+     <y>698</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>195</x>
+     <y>812</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GridSelector_Sim</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Previous_Simulation_Prop</receiver>
+   <slot>show_properties(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>69</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>284</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Use_Previous_Simulation</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pre_sim_box</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>151</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>166</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
