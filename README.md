@@ -12,13 +12,22 @@ Faults are one of the building-blocks for subsurface modeling studies. Incomplet
 ### Demos
 #### 1. [ConvergenceDisplay](https://github.com/orhuna/bayesian-mpp-lvl/blob/master/src/demos/ConvergenceDisplay.m)
 
-#### 2. DenseDataCase
+Demo for displaying Markov Chain convergence for Metropolis-Hastings-Green sampler. Modified Hausdorff distance is used as the dissimilarity measure between states.
 
-#### 3. LevelSetDemo2
+#### 2. [DenseDataCase](https://github.com/orhuna/bayesian-mpp-lvl/blob/master/src/demos/DenseDataCase.m)
 
-#### 4. Poisson_StraussDemo
+Demo for conditioning a fault network to dense fault data. Level-sets are used to resolve 3-D surface intersections and patterns are modeled using Marked Strauss Point Process as the prior model.
 
-#### 5. UnconditionedMarkedSimulation
+#### 3. [LevelSetDemo2](https://github.com/orhuna/bayesian-mpp-lvl/blob/master/src/demos/LevelSetDemo2.m)
+
+Demo for detecting 3D surface intersections and imposing abutting relationships on surfaces.
+
+#### 4. [Poisson_StraussDemo](https://github.com/orhuna/bayesian-mpp-lvl/blob/master/src/demos/Poisson_Strauss_Demo.m)
+
+Demo depicting different point and marked-point processes. Variables for the Marked Strauss Point process can be altered to observe the effect of input parameters on the resulting point pattern.
+
+#### 5. [UnconditionedMarkedSimulation](https://github.com/orhuna/bayesian-mpp-lvl/blob/master/src/demos/UnconditionedMarkedSimulation.m)
+Demo for generating prior realizations of the fault network. Components in this demo is used to assess prior-data conflict.
 
 ## References
 1. Aydin, O., & Caers, J. K. (2017). Quantifying structural uncertainty on fault networks using a marked point process within a Bayesian framework. Tectonophysics, 712, 101-124.
